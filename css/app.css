@@ -157,7 +157,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0.0625rem;
-  max-width: 302px;
+  max-width: 18.875rem;
   background-color: lightblue;
 }
 
@@ -179,7 +179,7 @@ body {
 }
 
 .container__p {
-  font-size: 48px;
+  font-size: 3rem;
   margin-top: 3rem;
 }
 
