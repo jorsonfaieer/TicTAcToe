@@ -15,7 +15,7 @@
 
     max-width: 18.875rem;
 
-    background-color: lightblue;
+    background-color: #3e3e3e;
 }
 .tablero__casillas{
     display: flex;
@@ -26,7 +26,8 @@
     width: 6.25rem;
     font-size: 4rem;
     cursor: pointer;
-    background-color: red;
+    background-color: #f3f3f3;
+    font-family: 'Mynerve', cursive;
 
     user-select: none;
 }
