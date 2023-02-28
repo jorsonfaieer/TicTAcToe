@@ -204,3 +204,14 @@ body {
 .container__btn:hover {
   background-color: rgb(82, 126, 221);
 }
+
+@media screen and (max-width: 550px) {
+  .container__p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container__p {
+    font-size: 1.6rem;
+  }
+}
