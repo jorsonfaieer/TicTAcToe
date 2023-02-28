@@ -6,7 +6,14 @@
     align-items: center;
     flex-direction: column;
 
-    height: 100svh;
+    height: 100dvh;
+    user-select: none;
+}
+.container__h1{
+    font-family: 'Mynerve', cursive;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    font-weight: bold;
 }
 .container__tablero{
     display: flex;
@@ -14,7 +21,6 @@
     gap: .0625rem;
 
     max-width: 18.875rem;
-
     background-color: #3e3e3e;
 }
 .tablero__casillas{
@@ -28,14 +34,10 @@
     cursor: pointer;
     background-color: #f3f3f3;
     font-family: 'Mynerve', cursive;
-
-    user-select: none;
 }
 .container__p{
     font-size: 3rem;
     margin-top: 3rem;
-
-    user-select: none;
 }
 .container__btn{
     cursor: pointer;

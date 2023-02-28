@@ -147,7 +147,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100svh;
+  height: 100dvh;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container__h1 {
+  font-family: "Mynerve", cursive;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  font-weight: bold;
 }
 
 .container__tablero {
@@ -177,19 +188,11 @@ body {
   cursor: pointer;
   background-color: #f3f3f3;
   font-family: "Mynerve", cursive;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .container__p {
   font-size: 3rem;
   margin-top: 3rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .container__btn {
