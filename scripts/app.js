@@ -90,4 +90,3 @@ game();
 btn.addEventListener('click', ()=>{
     resetearJuego();
 });
-

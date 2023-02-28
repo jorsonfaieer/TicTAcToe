@@ -147,7 +147,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  height: 100svh;
 }
 
 .container__tablero {
