@@ -42,35 +42,50 @@ function chequearGanador(player){
     return false;
 }
 
+function chequearEmpate(){
+    for(let i = 0 ; i < 9 ; i++){
+        if (casillas[i].innerHTML === ''){
+            return false;
+        }
+    }
+    return true;
+}
+
+function game(){
+    casillas.forEach(casillero => {
+        casillero.addEventListener("click", ()=>{
+            if (!ganador && casillero.innerHTML === '') {
+                casillero.innerHTML = turno;
+    
+                // Verificar si el jugador actual gano
+                if(chequearGanador(turno)){
+                    ganador = true;
+                    mensaje.innerHTML = `El jugador ${turno} ha ganado!`;
+                    return;   
+                }
+                // Verificar si hay empate
+                if(chequearEmpate()){
+                    ganador = true;
+                    mensaje.innerHTML = `Empate!`; 
+                    return;
+                }
+                // Cambio de turno
+                if(!ganador){
+                    turno = turno === 'X' ? 'O' : 'X';
+                    mensaje.innerHTML = `Es el turno del jugador ${turno}.`;
+                }
+            }
+        });    
+    });  
+}
+
 const casillas = document.querySelectorAll('#casilla');
 const mensaje = document.querySelector('#mensaje');
 const btn = document.querySelector('#btn');
 let turno = "X";
 let ganador = false;
 
-
-casillas.forEach(casillero => {
-    casillero.addEventListener("click", ()=>{
-        if (!ganador && casillero.innerHTML === '') {
-            casillero.innerHTML = turno;
-
-            // Verificar si el jugador actual gano
-            if(chequearGanador(turno)){
-                ganador = true;          
-            }
-            // Verificar si hay empate
-
-            // Cambio de turno
-            if(!ganador){
-                turno = turno === 'X' ? 'O' : 'X';
-                mensaje.innerHTML = `Es el turno del jugador ${turno}.`;
-            }
-        }
-        if (ganador){
-            mensaje.innerHTML = `El jugador ${turno} ha ganado!`; 
-        }
-    });    
-});    
+game();  
 
 btn.addEventListener('click', ()=>{
     resetearJuego();
