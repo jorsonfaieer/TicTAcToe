@@ -27,10 +27,14 @@
     font-size: 4rem;
     cursor: pointer;
     background-color: red;
+
+    user-select: none;
 }
 .container__p{
     font-size: 3rem;
     margin-top: 3rem;
+
+    user-select: none;
 }
 .container__btn{
     cursor: pointer;

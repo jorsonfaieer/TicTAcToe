@@ -176,11 +176,19 @@ body {
   font-size: 4rem;
   cursor: pointer;
   background-color: red;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container__p {
   font-size: 3rem;
   margin-top: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container__btn {
